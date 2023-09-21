@@ -9,7 +9,12 @@ def hello():
 
 @app.get("/calc/result")
 def get_calculation():
-  """Выводит последний результат"
+  """Выводит последний результат"""
+  return A[-1] if len(A)>0 else None
+
+@app.delete("/calc/clear")
+def clear_list():
+  """Очищает список с результатами"""
   A.clear()
 
 @app.get("/calc/history")

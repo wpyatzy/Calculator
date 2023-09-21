@@ -1,7 +1,7 @@
 from fastapi import FstAPI
 
 app=FastAPI()
-a=[]
+A=[]
 
 @app.get("/")
 def hello():

@@ -22,7 +22,7 @@ def get_history():
   """Выводит историю калькулятора"""
   return A
 
-@app.port("/calc")
+@app.post("/calc")
 def make_calculations(a: int, b: int, char: str):
   """a-первое число,
     b-второе число,

@@ -27,7 +27,7 @@ def make_calculations(a: int, b: int, char: str):
   """a-первое число,
     b-второе число,
     char-знак мат операции"""
-  if (a==0 or b==0) and char=='/': return {"Деление с 0"}
+  if b==0 and char=='/': return {"Деление на 0"}
   if char=='+': A.append(a+b); return get_calculation()
   elif char=='-': A.append(a-b); return get_calculation()
   elif char=='*': A.append(a*b); return get_calculation()
